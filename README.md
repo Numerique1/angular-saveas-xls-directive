@@ -27,7 +27,7 @@ var app = angular.module("app", ["angular-saveas-xls-directive"]);
 </table>
 ````
 ### XLS style classes
-   '_xls-bordered' : define a 1px solid black border on the element
-   '_xls-text_color' : define text color
-   'xls-color_#SOMEHEXACOLOR' : the color of your element will be #SOMEHEXACOLOR
-   '_xls-remove' : the element will not be on the xls file
+  -'_xls-bordered' : define a 1px solid black border on the element
+  -'_xls-text_color' : define text color
+  -'xls-color_#SOMEHEXACOLOR' : the color of your element will be #SOMEHEXACOLOR
+  -'_xls-remove' : the element will not be on the xls file
