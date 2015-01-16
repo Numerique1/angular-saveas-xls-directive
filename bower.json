@@ -7,5 +7,5 @@
   "main": "angular-saveas-xls-directive.js",
   "dependencies": {
     "FileSaver": "*"
-  },
+  }
 }
