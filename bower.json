@@ -1,0 +1,11 @@
+{
+  "name": "angular-saveas-xls-directive",
+  "version": "0.1",
+  "description": "AngularJS directive to generate an xls file from HTML table element using FileSaver.js",
+  "authors": ["Numerique1 <contact@numerique1.fr>"],
+  "license": "MIT",
+  "main": "angular-saveas-xls-directive.js",
+  "dependencies": {
+    "FileSaver": "*"
+  },
+}
