@@ -18,7 +18,7 @@ var app = angular.module("app", ["angular-saveas-xls-directive"]);
 ````
 ### How to use
 ````js
-<button save-as-xls save-as-charset="'utf-8'" save-as-name="'my-file-name'" target-element="'target-element'"></button>
+<button saveas-xls save-as-charset="'utf-8'" save-as-name="'my-file-name'" target-element="'target-element'"></button>
 <table id="target-element">
        <tr>
                <td class="xls-text_color _xls-color_#b52020">There is a red text</td>
