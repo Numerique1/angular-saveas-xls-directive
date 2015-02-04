@@ -74,8 +74,9 @@
             charset = scope.saveAsCharset ? scope.saveAsCharset : 'utf-8';
             fileName = scope.saveAsName ? scope.saveAsName : 'export';
 
-            var blob = new Blob([htmlTable], {
-                type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset="+charset
+            var BOM = "\uFEFF";
+            var blob = new Blob([BOM + htmlTable], {
+              type: "application/vnd.ms-excel;charset="+charset
             });
             saveAs(blob, fileName+".xls");
 
