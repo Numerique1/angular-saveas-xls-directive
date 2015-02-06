@@ -50,7 +50,7 @@
 
             // Replace each input checkbox if is checked by 1
             // @TODO maybe it's possible to put in html a value to checkbox
-            var replaceInputCheckBoxByValue = function (markedClone) {
+            var replaceInputCheckboxByValue = function (markedClone) {
                 markedClone.find("input[type=checkbox]").each(function () {
                     if($(this).is(':checked')){
                         $(this).replaceWith('1');
@@ -72,7 +72,7 @@
 
                     // By default we replace input type text with value
                     scope.saveAsWithInputText   = true;
-                    scope.saveAsWithCheckBox    = true;
+                    scope.saveAsWithCheckbox    = true;
                     scope.saveAsWithTextArea    = true;
 
                     var $markedForExport, markedClone, charset, fileName, htmlTable, markedContainer;
@@ -88,11 +88,11 @@
                     if (scope.saveAsWithInputText == true) {
                         replaceInputTextByValue(markedClone);
                     }
-                    // if saveAsWithCheckBox is true replace each input checkbox checked by 1
-                    if (scope.saveAsWithCheckBox == true) {
-                        replaceInputCheckBoxByValue(markedClone);
+                    // if saveAsWithCheckbox is true replace each input checkbox checked by 1
+                    if (scope.saveAsWithCheckbox == true) {
+                        replaceInputCheckboxByValue(markedClone);
                     }
-                    // if saveAsWithCheckBox is true replace each textarea by value
+                    // if saveAsWithTextArea is true replace each textarea by value
                     if (scope.saveAsWithTextArea == true) {
                         replaceTextAreaByValue(markedClone);
                     }
